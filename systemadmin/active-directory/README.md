@@ -30,9 +30,31 @@ Each role is separated into its own virtual machine to mirror enterprise best pr
 ## Phase 1 – Server & Network Foundation
 
 - Installed Windows Server 2022 on Proxmox
+
+<p align="center">
+  <img src="images/Figure1.png" width="700">
+</p>
+
+<p align="center">
+  <img src="images/Figure2.png" width="700">
+</p>
+
+<p align="center">
+  <img src="images/Figure3.png" width="700">
+</p>
+
 - Configured static IP addressing
 - Set DNS to point to the Domain Controller
+
+<p align="center">
+  <img src="images/Figure4.png" width="700">
+</p>
+
 - Renamed servers following role-based naming conventions
+
+<p align="center">
+  <img src="images/Figure5.png" width="700">
+</p>
 
 ## Phase 2 – Active Directory Domain Services
 
@@ -40,6 +62,10 @@ Each role is separated into its own virtual machine to mirror enterprise best pr
 - Promoted DC01 to a Domain Controller
 - Created a new domain: corp.local
 - Verified DNS integration and domain health
+
+<p align="center">
+  <img src="images/Figure6.png" width="700">
+</p>
 
 This phase established centralized authentication and directory services for the environment.
 
@@ -62,14 +88,28 @@ An enterprise-style OU structure was implemented to separate users, computers, a
 - Domain Local Groups were created to represent resource access
 - Group nesting followed the AGDLP model
 
+<p align="center">
+  <img src="images/Figure7.png" width="700">
+</p>
+
+
 ## Phase 5 – File Server & NTFS Permissions
 
-- Deployed a dedicated File Server (FS01)
-- Joined FS01 to the domain
-- Created a structured data directory (D:\Shares)
+- Deployed a dedicated File Server (WinServer-FileServer)
+- Joined FileServer to the domain
+- Created a structured data directory (F:\Shares\Departments)
+
+<p align="center">
+  <img src="images/Figure8.png" width="700">
+</p>
+
 - Configured NTFS permissions using Domain Local Groups
 - Used Global Groups for identity-based access
 - Enabled Access-Based Enumeration
+
+<p align="center">
+  <img src="images/Figure9.png" width="700">
+</p>
 
 Permissions were never assigned directly to users.
 
@@ -86,6 +126,22 @@ Permissions were never assigned directly to users.
 - Confirmed access-based restrictions between departments
 - Tested read/write permissions per group
 - Ensured unauthorized access was denied
+
+<p align="center">
+  <img src="images/Figure10.png" width="700">
+</p>
+
+<p align="center">
+  <img src="images/Figure11.png" width="700">
+</p>
+
+<p align="center">
+  <img src="images/Figure12.png" width="700">
+</p>
+
+<p align="center">
+  <img src="images/Figure13.png" width="700">
+</p>
 
 All access decisions were validated using group membership rather than direct user permissions.
 

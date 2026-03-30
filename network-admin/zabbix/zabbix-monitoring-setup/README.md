@@ -57,15 +57,15 @@ Not only that it also provide sending an alert by emailing the User through Slac
 </div>
 
 <div align="center">
-  <img src="screenshots/ubuntu-server-resource-usage.png"
-       alt="Ubuntu Server Host Resources" 
+  <img src="screenshots/Zabbix High CPU alerted.png"
+       alt="Zabbix Warning and High Severity Alerts" 
        width="650">
   <p>Resources that was collected from Ubuntu Server</p>
 </div>
 
 <div align="center">
-  <img src="screenshots/Zabbix-warning-severity.png"
-       alt="Warning Severity Issue" 
+  <img src="screenshots/Slack Messages.png"
+       alt="Slack Messages" 
        width="650">
   <p>Zabbix shows a Warning Severity Problems on Ubuntu Server, showing High CPU Utilization</p>
 </div>

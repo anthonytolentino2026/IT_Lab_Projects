@@ -1,13 +1,11 @@
-# My Zabbix Monitoring Setup
+# Zabbix Monitoring Setup
 
-Personal Zabbix 7.4 lab / production setup.
+Personal Zabbix 7.4 lab.
 
-## Current Infrastructure
+## Setup
 
-- **Zabbix Server**: 172.16.2.14 (Ubuntu 24.04)
-- **Monitored Hosts**:
-  - Zabbix Server itself
-  - Ubuntu Server (`ubuntu-server-01`)
+- **Zabbix Server**
+- **Zabbix Agent**
 
 ## Tech Stack
 
@@ -16,13 +14,26 @@ Personal Zabbix 7.4 lab / production setup.
 - Nginx + PHP 8.3
 - Zabbix Agent 2 (on monitored hosts)
 
+## Directories
+
+| Section              | Directory/Path                                      | Description                                                 | Links                                           |
+|----------------------|-----------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------|
+| **Docs**             | `docs/installation.md`                              | Full installation steps for Zabbix Server + MariaDB + Nginx | [View](docs/installation.md)                    |
+| **Docs**             | `docs/hosts.md`                                     | List of monitored hosts and how they were added             | [View](docs/hosts.md)                           |
+| **Docs**             | `docs/templates.md`                                 | Used templates and custom triggers                          | [View](docs/templates.md)                       |
+| **Docs**             | `docs/troubleshooting.md`                           | Common issues and solutions                                 | [View](docs/troubleshooting.md)                 |
+| **Configs**          | `configs/zabbix_server.conf`                        | Main Zabbix Server configuration                            | [View](configs/zabbix_server.conf)              |
+| **Configs**          | `configs/zabbix_agent2.conf`                        | Example Agent 2 configuration                               | [View](configs/zabbix_agent2.conf)              |
+| **Configs**          | `configs/nginx.conf`                                | Nginx configuration for Zabbix frontend                     | [View](configs/nginx.conf)                      |
+
 ## Lessons Learned
 
 
-## Screenshots
+## Results
 
 ![Dashboard](screenshots/dashboard.png)
-![Ubuntu Server Host](screenshots/ubuntu-server-host.png)
+![Ubuntu Server Host](screenshots/ubuntu-server-resource-usage.png)
+![Warning Severity Issue](screenshots/Zabbix-warning-severity.png)
 
 ## Future Plans
 

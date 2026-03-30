@@ -1,4 +1,4 @@
-# Zabbix Monitoring Setup
+# Zabbix Monitoring Setup with Slack Notifications
 
 Personal Zabbix 7.4 lab.
 
@@ -60,12 +60,12 @@ Not only that it also provide sending an alert by emailing the User through Slac
   <img src="screenshots/Zabbix High CPU alerted.png"
        alt="Zabbix Warning and High Severity Alerts" 
        width="650">
-  <p>Resources that was collected from Ubuntu Server</p>
+  <p>Zabbix Alerted High CPU Usage from Warning to High Severity Problems on Ubuntu Server</p>
 </div>
 
 <div align="center">
   <img src="screenshots/Slack Messages.png"
        alt="Slack Messages" 
        width="650">
-  <p>Zabbix shows a Warning Severity Problems on Ubuntu Server, showing High CPU Utilization</p>
+  <p>Slack Notification of High CPU Alerts</p>
 </div>

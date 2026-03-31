@@ -9,7 +9,7 @@ For this lab, we will add the Ubuntu 24.04 Agent VM as a monitored host using th
 <h3>1. Login to the Zabbix Web Interface using admin credentials</h3>
 
 <div align="center">
-  <img src="screenshots/zabbixlogin.png"
+  <img src="../screenshots/zabbixlogin.png"
        alt="Zabbix Login" 
        width="650">
   <p>Login the default credential of Zabbix</p>
@@ -21,7 +21,7 @@ For this lab, we will add the Ubuntu 24.04 Agent VM as a monitored host using th
 <p>To add a host, simply click "Create host"</p>
 
 <div align="center">
-  <img src="screenshots/hostconfig.png"
+  <img src="../screenshots/hostconfig.png"
        alt="Zabbix Login" 
        width="650">
   <p>Creation of Ubuntu Server</p>
@@ -30,14 +30,14 @@ For this lab, we will add the Ubuntu 24.04 Agent VM as a monitored host using th
 <p>After adding the host. Zabbix will link up with the Agent VM. It takes time for it to add in its Data collection but after sometime Zabbix Server is now tracking the Agent VM</p>
 
 <div align="center">
-  <img src="screenshots/zabbix-createdhosts.png"
+  <img src="../screenshots/zabbix-createdhosts.png"
        alt="Zabbix Login" 
        width="650">
   <p>Ubuntu Server Zabbix Agent successfully created</p>
 </div>
 
 <div align="center">
-  <img src="screenshots/AgentHost-SystemPerformance.png"
+  <img src="../screenshots/AgentHost-SystemPerformance.png"
        alt="Zabbix Login" 
        width="650">
   <p>Ubuntu Server Dashboard Metrics</p>
@@ -47,14 +47,14 @@ For this lab, we will add the Ubuntu 24.04 Agent VM as a monitored host using th
 <p>Zabbix Servers provides visualization of the Raw data like the CPU, Memory, Storage Capacity resources by simply navigating to Monitoring > Latest data</p>
 
 <div align="center">
-  <img src="screenshots/ubuntu-latestdata.png"
+  <img src="../screenshots/ubuntu-latestdata.png"
        alt="Ubuntu Zabbix Agent Resources" 
        width="650">
   <p>Filtering of Ubuntu Server</p>
 </div>
 
 <div align="center">
-  <img src="screenshots/ubuntu-resources.png"
+  <img src="../screenshots/ubuntu-resources.png"
        alt="Ubuntu Zabbix Agent Resources" 
        width="650">
   <p>Ubuntu Zabbix Agent Resources</p>

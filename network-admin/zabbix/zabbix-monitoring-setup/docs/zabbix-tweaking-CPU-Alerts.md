@@ -11,7 +11,7 @@
 <h3>1. On Zabbix, navigate to Data Collection > Templates and here we have to select Template groups. We will search for Linux by Zabbix Agent</h3>
 
 <div align="center">
-  <img src="screenshots/DataCollectionTemplates.png"
+  <img src="../screenshots/DataCollectionTemplates.png"
        alt="Zabbix Data Collection Templates" 
        width="650">
   <p>Data Collection Templates Filtering name "Linux"</p>
@@ -22,14 +22,14 @@
 <h3>2. Configure the Trigger on the Template</h3>
 
 <div align="center">
-  <img src="screenshots/CPU-MaxHighAlerts.png"
+  <img src="../screenshots/CPU-MaxHighAlerts.png"
        alt="Configuring CPU Util High Alert" 
        width="650">
   <p>Configuring CPU Utilization Alerts with Threshold of 90%</p>
 </div>
 
 <div align="center">
-  <img src="screenshots/CPU-MinHighAlerts.png"
+  <img src="../screenshots/CPU-MinHighAlerts.png"
        alt="Configuring CPU Util High Alert" 
        width="650">
   <p>Configuring CPU Utilization Alerts with Threshold of 80%</p>
@@ -42,7 +42,7 @@ time duration is 4 minutes.
 </p>
 
 <div align="center">
-  <img src="screenshots/RunningStressNg.png"
+  <img src="../screenshots/RunningStressNg.png"
        alt="Running Stress Test on CPU Utilization of the VM Agent" 
        width="650">
   <p>To test the alerts, we can simply run this command</p>
@@ -57,7 +57,7 @@ After running these commands on the Agent, here is the result on Zabbix Server.
 </p>
 
 <div align="center">
-  <img src="screenshots/Zabbix High CPU alerted.png"
+  <img src="../screenshots/Zabbix High CPU alerted.png"
        alt="Zabbix High CPU alerted" 
        width="650">
   <p>Zabbix High CPU alerted</p>

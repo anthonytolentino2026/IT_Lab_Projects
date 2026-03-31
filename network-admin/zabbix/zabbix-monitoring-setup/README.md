@@ -4,25 +4,26 @@ Personal Zabbix 7.4 lab.
 
 ## Overview
 
-<p>This documentation shows the process of setting up Zabbix as an open source tool used for monitoring resources, performance and network traffic on a Server.
-This documents that zabbix can be installed in a virtual machine, making it also suitable for containerization such as Docker, Kubernetes and LXC. 
+<p>This documentation covers the setup of Zabbix as an open source monitoring solution for tracking infrastructure resources and performance metrics. 
+The entire environment was built as a lab in a virtualized setup using Proxmox VE. Zabbix Server was installed with MariaDB as the backend database and
+Nginx + PHP 8.3 for web front end. Slack integration was added to deliver real-time alert notifications.
 
-The Setup contains two components
+## Main Components
 - Zabbix Server: Centralizes the collection of data from monitored devices, processes metrics, evaluates triggers (based on thresholds for Problems), generates
 alerts and stores historical data
-- Zabbix Agent: A lightweight that is installed on a host that will be monitored (servers, VMs etc.) They are the ones pushing data to the Zabbix Server or
+- Zabbix Agent 2: A lightweight that is installed on a host that will be monitored (servers, VMs etc.) They are the ones pushing data to the Zabbix Server or
 responds to server polls.
 </p>
 
 ## Tech Stack
 
-- Proxmox VE (For virtualization)
-- Zabbix 7.4
-- MariaDB
-- Nginx + PHP 8.3
-- Zabbix Agent 2 (on monitored hosts)
+- Proxmox VE - Virtualization platform
+- Zabbix 7.4 - Monitoring platform
+- MariaDB - Database backend
+- Nginx + PHP 8.3 - Web service and frontend
+- Zabbix Agent 2 - Installed on a monitored hosts
 
-## Setup
+## Architecture
 <div align="center">
   <img src="illustration/ZabbixInfra.jpg" 
        alt="Zabbix Infrastructure Diagram" 

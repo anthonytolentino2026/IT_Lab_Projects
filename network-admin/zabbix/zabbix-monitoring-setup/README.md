@@ -45,10 +45,10 @@ the problem status directly in Zabbix, completing the monitoring and incident re
   
 | Section              | Directory/Path                                      | Description                                                 | Links                                           |
 |----------------------|-----------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------|
-| **Docs**             | `docs/installation.md`                              | Full installation steps for Zabbix Server + MariaDB + Nginx | [View](docs/installation.md)                    |
-| **Docs**             | `docs/hosts.md`                                     | List of monitored hosts and how they were added             | [View](docs/hosts.md)                           |
-| **Docs**             | `docs/templates.md`                                 | Used templates and custom triggers                          | [View](docs/templates.md)                       |
-| **Docs**             | `docs/troubleshooting.md`                           | Common issues and solutions                                 | [View](docs/troubleshooting.md)                 |
+| **Docs**             | `docs/zabbix-setup.md`                              | Full installation steps for Zabbix Server + MariaDB + Nginx | [View](docs/zabbix-setup.md)                    |
+| **Docs**             | `docs/zabbix-add-hosts.md`                          | List of monitored hosts and how they were added             | [View](docs/zabbix-add-hosts.md)                |
+| **Docs**             | `docs/zabbix-slack-integration.md`                  | Used templates and custom triggers                          | [View](docs/zabbix-slack-integration.md)        |
+| **Docs**             | `docs/zabbix-tweaking-CPU-Alerts.md`                | Common issues and solutions                                 | [View](docs/zabbix-tweaking-CPU-Alerts.md)      |
 | **Configs**          | `configs/zabbix_server.conf`                        | Main Zabbix Server configuration                            | [View](configs/zabbix_server.conf)              |
 | **Configs**          | `configs/zabbix_agent2.conf`                        | Example Agent 2 configuration                               | [View](configs/zabbix_agent2.conf)              |
 | **Configs**          | `configs/nginx.conf`                                | Nginx configuration for Zabbix frontend                     | [View](configs/nginx.conf)                      |

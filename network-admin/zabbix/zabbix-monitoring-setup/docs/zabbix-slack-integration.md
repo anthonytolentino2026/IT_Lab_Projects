@@ -77,7 +77,7 @@ In Alerts > Trigger Actions, here we can create an Action and add a condition us
        width="650">
   <p>Action uses Trigger Severity and the condition is Greater than or Equal to Warning. This shows that once Zabbix detects a Warning level. It will
   Trigger this action and for the Operations, we need to specify which user will be the one to send a message to the Slack Workspace.</p>
-  <p>For this Lab, we can use the Zabbix Administrator but for best practice we can create a least privilege user</p>
+  <p>For this Lab, we can use the Zabbix Administrator but for security practice we can create a least privilege user</p>
 </div>
 
 <h1>Result</h1>

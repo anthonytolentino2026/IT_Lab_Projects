@@ -25,13 +25,19 @@ responds to server polls.
 
 ## Architecture
 <div align="center">
-  <img src="illustration/ZabbixInfra.jpg" 
-       alt="Zabbix Infrastructure Diagram" 
+  <img src="illustration/ZabbixArchitecture.png" 
+       alt="Zabbix Architecture Diagram" 
        width="500">
 </div>
 
-<p>The illustration shows a simple setup of Zabbix Server and Agent as a Virtual Machine inside Proxmox. The environment shows Zabbix Agent sends Telemetry data to Zabbix Server.
-Not only that it also provide sending an alert by emailing the User through Slack.
+<p>This diagram illustrates a Zabbix monitoring architecture deployed as virtual machines within a Proxmox environment.
+
+The Zabbix Agent continuously collects telemetry data such as performance metrics, system health, resource utilization and sends it to Zabbix Server.
+When a predefined trigger condition is met (e.g., High CPU Usage, Service Failure or interface issues), the Zabbix Server processes the data and sends real-time
+alert notifications via the internet to a Slack workspace.
+
+The NOC Engineer monitors these alerts in Slack, investigates the issues which often by following direct links back to the Zabbix Interface and acknowledges or updates
+the problem status directly in Zabbix, completing the monitoring and incident response loop.
 </p>
 
 ## Directories

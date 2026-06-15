@@ -35,21 +35,7 @@ The project demonstrates core networking concepts commonly used in enterprise en
   - Efficient IP allocation
   - Reduced address wastage
   - Support for different host requirements
-
----
-
-## Tech Stack
-
-- Cisco Packet Tracer
-- Cisco IOS
-- OSPF (Open Shortest Path First)
-- VLSM (Variable Length Subnet Masking)
-- DHCP
-- VLANs
-- 802.1Q Trunking
-- Router-on-a-Stick
-- Inter-VLAN Routing
-
+ 
 ---
 
 ## Topology

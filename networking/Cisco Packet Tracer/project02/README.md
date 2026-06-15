@@ -50,25 +50,6 @@ Additional security measures such as SSHv2 management access, BPDU Guard, PortFa
 
 ---
 
-## Tech Stack
-
-- Cisco Packet Tracer
-- Cisco IOS
-- OSPF Area 0
-- MD5 Authentication
-- VLSM
-- DHCP
-- VLANs
-- Router-on-a-Stick
-- Inter-VLAN Routing
-- EtherChannel (PAgP)
-- Rapid Spanning Tree Protocol (RSTP)
-- SSHv2
-- Port Security
-- BPDU Guard
-
----
-
 ## Topology
 
 <div align="center">

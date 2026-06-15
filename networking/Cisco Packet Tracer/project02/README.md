@@ -89,7 +89,7 @@ OSPF Area 0 dynamically exchanges routing information between routers while Ethe
 
 | Section | Directory | Description | Link |
 |----------|-----------|-------------|------|
-| Configurations | `configs/routers/` | Cisco devices configurations | [View](configs/) |
+| Configurations | `configs/` | Cisco devices configurations | [View](configs/) |
 | Images | `images/` | Network topology and verification screenshots | [View](images/) |
 | Addressing Table | `tables/addressing-table.md` | Complete IP addressing scheme | [View](tables/addressing-table.md) |
 | Network Mapping | `tables/network-mapping.md` | Physical and logical device connectivity | [View](tables/network-mapping.md) |

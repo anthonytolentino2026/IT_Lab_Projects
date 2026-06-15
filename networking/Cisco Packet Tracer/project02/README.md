@@ -103,15 +103,6 @@ OSPF Area 0 dynamically exchanges routing information between routers while Ethe
 
 ## Results
 
-### OSPF Neighbor Adjacency
-
-<div align="center">
-  <img src="images/ospf-neighbor-adjacency.png"
-       alt="OSPF Neighbors"
-       width="750">
-  <p>Successful OSPF adjacency establishment between all routers using MD5 authentication.</p>
-</div>
-
 ### OSPF Neighbor Adjacencies and Interface
 
 <div align="center">

@@ -42,7 +42,6 @@ The resulting design closely resembles modern campus infrastructures that requir
 - Wireless LAN Controller (WLC)
 - Lightweight Access Points (LWAPs)
 - Centralized WLAN Management
-- Enterprise Wireless Connectivity
 
 ### Network Services
 

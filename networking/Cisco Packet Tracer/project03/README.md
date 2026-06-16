@@ -132,13 +132,13 @@ HSRP provides default gateway redundancy for all VLANs, while EtherChannel and R
   <img src="images/4-testcase1-traceroute-ping-main-wired.png"
        alt="Failover Testing"
        width="750">
-  <img src="images/5-testcase1-traceroute-ping-main-wired.png"
+  <img src="images/5-testcase1-traceroute-ping-backup-wired.png"
        alt="Failover Testing"
        width="750">
   <img src="images/8-testcase2-traceroute-ping-main-wireless.png"
        alt="Failover Testing"
        width="750">
-  <img src="images/9-testcase2-traceroute-ping-main-wireless.png"
+  <img src="images/9-testcase2-traceroute-ping-backup-wireless.png"
        alt="Failover Testing"
        width="750">
   <p>Network services remained operational during simulated uplink and infrastructure failures through HSRP and Rapid-PVST+ convergence.</p>

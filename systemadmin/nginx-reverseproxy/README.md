@@ -12,7 +12,7 @@ The objective of this project is to configure a Proxmox LXC container with Nginx
 
 ###Nginx Server Block in `sites-available` Directory###
 <div align="center">
-  <img src="images/nginx_sites-available.png"
+  <img src="images/nginx_accesslogs.png"
        alt="Nginx Sites Available"
        width="750">
   <p> .</p>

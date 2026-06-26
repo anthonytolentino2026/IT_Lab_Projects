@@ -22,7 +22,7 @@ To achieve this, the project involves:
 ## Traffic Flow Architecture
 
 <div align="center">
-  <img src="images/traffic-flow-architecture.png"
+  <img src="images/traffic-flow-architecture.jpg"
        alt="Traffic Flow"
        width="750">
   <p>Step-by-step Traffic flow architecture.</p>

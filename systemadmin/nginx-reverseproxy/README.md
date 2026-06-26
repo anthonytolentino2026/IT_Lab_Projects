@@ -8,38 +8,38 @@ This document provides detailed instructions on how to set up a Proxmox Linux co
 
 The objective of this project is to configure a Proxmox LXC container with Nginx to handle both HTTP and WebSocket requests from clients. This setup involves creating an LXC container, installing necessary packages, configuring Nginx, and troubleshooting any issues that may arise during the process.
 
+## Main Components
+- **Proxmox VE**: Type 1 Hypervisor used to create Virtual Machines and Linux Containers.
+- **Nginx**: Installed on the LXC container to handle HTTP requests efficiently. This handles all HTTP Requests customized from a server block in `sites-available` to manage both static and dynamic content based on client requests.
+- **Pi-Hole DNS**: DNS Resolver which was used to map domain name of TrueNAS to the Reverse Proxy (Nginx)
+- **Server Block Configuration**: By editing server blocks, This was used to define routes that could handle different types of requests, ensuring smooth performance for clients.
+
 ## Results
 
-###Nginx Server Block in `sites-available` Directory###
+### Nginx Access Logs
+
 <div align="center">
   <img src="images/nginx_accesslogs.png"
-       alt="Nginx Sites Available"
+       alt="Nginx Access Logs"
        width="750">
-  <p> .</p>
+  <p>Nginx logs confirming HTTP requests can access TrueNAS.</p>
 </div>
 
-###Pi-hole DNS Resolver###
-<div align="center">
-  <img src="images/pi-hole.png"
-       alt="Pi-Hole DNS Resolver"
-       width="750">
-  <p> .</p>
-</div>
+### Accessing TrueNAS via Nginx
 
-###Accessing TrueNAS via Nginx###
 <div align="center">
   <img src="images/truenas.png"
        alt="TrueNAS"
        width="750">
-  <p> .</p>
+  <p>Accessing TrueNAS through Nginx reverse proxy.</p>
 </div>
 
 
 ## Learning Outcome
 
-- Install and Configure Nginx within the LXC container by modifying server blocks and proxy settings.
-- Troubleshoot HTTP Websocket and request route issues during configuration.
-- Verify the setup by testing HTTP and WebSocket connections.
+- Configuring Nginx as Reverse Proxy allows it to act as a gateway access to the Applications behind it.
+- Specifying the server name for Nginx is important because this allows the it to forward/route the HTTP Request from the client endpoint to the Server.
+- DNS Resolver helped redirecting the client requests by mapping TrueNAS's domain name to the IP address of Nginx, and when Nginx receives the HTTP Request it checks on its sites-available what is the IP address of TrueNAS
 
 ## Conclusion
 
